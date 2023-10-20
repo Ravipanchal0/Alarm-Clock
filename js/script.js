@@ -27,6 +27,7 @@ setBtn.addEventListener("click", (e) => {
     settedAlarm.innerHTML = alarmName.value + " - " + (hour + " : " + min + ampms.value);
     alarm();
   }
+  setTime.reset();
 });
 
 stopBtn.addEventListener("click", () => {

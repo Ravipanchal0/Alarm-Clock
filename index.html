@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Alarm Clock - done all your events on your time</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
@@ -13,12 +13,12 @@
 
 <body class="flex items-center justify-center h-screen w-screen ">
     <audio id="myAudio">
-        <source src="./alarm_clock.mp3" type="audio/mpeg">
+        <source src="./audio/alarm_clock.mp3" type="audio/mpeg">
     </audio>
     <div class="rounded-3xl p-8 bg-yellow-500 w-80 h-2/3  text-center overflow-hidden shadow-2xl">
         <nav class="flex items-center justify-between">
             <div class="flex items-center space-x-1">
-                <img src="./icon.png" class="w-10">
+                <img src="./img/icon.png" class="w-10">
                 <h1 class="text-2xl font-bold text-white">Alarm Clock</h1>
             </div>
         </nav>
@@ -48,13 +48,13 @@
             <p class="text-lg" id="set-alarm-name"></p>
             <div class="text-3xl font-bold" id="time"></div>
             <div class="animation-vibrate my-5">
-                <img src="./ringing alarm.png" class="rotate-[20deg] w-36" alt="">
+                <img src="./img/ringing alarm.png" class="rotate-[20deg] w-36" alt="">
             </div>
             <button class="px-14 py-2 bg-white font-bold text-xl rounded-lg tracking-wide hover:bg-gray-200"
                 id="stop-alarm">stop</button>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
