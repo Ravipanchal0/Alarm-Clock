@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animation-vibrate {
+    animation: vibrate 0.1s infinite alternate;
+  }
+
+  @keyframes vibrate {
+    from {
+      rotate: 12deg;
+      transform: translateY(4px);
+    }
+    to {
+      rotate: -12deg;
+      transform: translateY(-4px);
+    }
+  }
+}
+.close-btn::after {
+  pointer-events: all;
+  content: "";
+  position: absolute;
+  background: url(./close.png) no-repeat center center/cover;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: -7px;
+  right: -5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
